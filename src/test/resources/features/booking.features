@@ -1,0 +1,7 @@
+Feature: Booking search
+  Scenario: Validation of hotel's rating
+    Given User on the search page
+    And Hotel's name is "АЗИМУТ Отель Олимпик Москва"
+    When User performs search
+    Then Hotel appears in the search
+    And Hotel has rating "8.9"
